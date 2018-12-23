@@ -40,3 +40,11 @@ elif salary > 80000:
     rate = 45/100
     deduct = 13500
     tax_result(rate, deduct)
+
+while True:
+    try:
+        open(salary)
+        print(salary.read())
+        close()
+    except ValueError as Error:
+    print("Error:{}".format("salary"))
